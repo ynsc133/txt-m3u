@@ -9,7 +9,7 @@
 
     <div v-show="activeTab === 'epg'" class="text-center mt-3">
       <el-card>
-        <h2>肥羊EPG XML格式：</h2>
+        <h2>EPG XML格式：</h2>
         <el-row class="text-center mt-3 button-group">
           <el-button type="primary" icon="el-icon-document-copy" v-clipboard:copy="'https://epg.v1.mk/fy.xml'"
                      v-clipboard:success="onCopySuccess" v-clipboard:error="onCopyError">
@@ -21,7 +21,7 @@
           </el-button>
         </el-row>
 
-        <h2>肥羊EPG JSON格式：</h2>
+        <h2>EPG JSON格式：</h2>
         <el-row class="text-center mt-3 button-group">
           <el-button type="primary" icon="el-icon-document-copy"
                      v-clipboard:copy="'https://epg.v1.mk/json?ch=频道名&date=日期'"
@@ -30,7 +30,7 @@
           </el-button>
         </el-row>
 
-        <h2>肥羊直播Logo库：</h2>
+        <h2>直播Logo库：</h2>
         <el-row class="text-center mt-3 button-group">
           <el-button type="primary" icon="el-icon-document-copy"
                      v-clipboard:copy="'https://epg.v1.mk/logo/节目名.png'" v-clipboard:success="onCopySuccess"
@@ -87,7 +87,7 @@
     </div>
     <footer>
       <el-row class="text-center mt-3 button-group">
-        <el-button type="primary" @click="openTG">加入肥羊影音数码综合交流群</el-button>
+        <el-button type="primary" @click="openTG">加入影音数码综合交流群</el-button>
         <el-button type="danger" @click="openHezu">家庭影音账号/设备合租购买推荐</el-button>
       </el-row>
     </footer>
